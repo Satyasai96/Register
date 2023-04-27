@@ -1,0 +1,33 @@
+server:
+  port: 9899
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/app
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: Saireddy@96
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: saijava1996@gmail.com
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+      
+reg-app:
+  messages:
+    regMailSubject: User Registration Successfully  
+    regMailBodyTemplateFile: UNLOCK-ACC-EMAIL-BODY.txt   
+      
+   
+      
